@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan FlexBox</title>
+</head>
+<style>
+    .align-contentstrech {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    }
+    .align-contentflexstart {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    }
+    .yellow {
+    background-color: yellow;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    }
+
+</style>
+<body>
+    <section class="align-contentstrech">
+    <div class="yellow"> item 1 </div>
+    <div class="yellow"> item 2 </div>
+    <div class="yellow"> item 3 </div>
+    <div class="yellow"> item 4 </div>
+    <div class="yellow"> item 5 </div>
+    <div class="yellow"> item 6 </div>
+    </section>
+
+    <section class="align-contentflexstart">
+    <div class="yellow"> item 1 </div>
+    <div class="yellow"> item 2 </div>
+    <div class="yellow"> item 3 </div>
+    <div class="yellow"> item 4 </div>
+    <div class="yellow"> item 5 </div>
+    <div class="yellow"> item 6 </div>
+    </section>
+</body>
+</html>

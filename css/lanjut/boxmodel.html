@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Box</title>
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.box {
+    display: flex;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 600px;
+}
+
+.box-img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.box-content {
+    padding: 20px;
+    width: 50%;
+}
+
+.box-content h2 {
+    color: #002366;
+    margin-bottom: 10px;
+}
+
+.box-content p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #002366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+</style>
+<body>
+    <div class="box">
+        <img src="IMG_20230603_221937.jpg" alt="Gambar Contoh" class="box-img">
+        <div class="box-content">
+            <h2>Me</h2>
+            <p>
+            Perkenalkan nama saya Ahmad Bagus Setiawan atau bisa dipanggil Bagus.
+            </p>
+            <button class="btn">Selengkapnya</button>
+        </div>
+    </div>
+</body>
+</html>
