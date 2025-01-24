@@ -1,0 +1,33 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom */
+    gap: 20px; /* Jarak antar elemen */
+    padding: 20px;
+  }
+  
+  .grid-item {
+    position: relative;
+    border: 1px solid #ccc; /* Opsional: untuk garis batas */
+    border-radius: 8px; /* Opsional: sudut melengkung */
+    overflow: hidden;
+    background-color: #fff; /* Opsional */
+  }
+  
+  .grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+ 
+  
+@media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 kolom untuk tablet */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .grid-container {
+      grid-template-columns: 1fr; /* 1 kolom untuk smartphone */
+    }
+  }
